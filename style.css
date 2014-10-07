@@ -1,0 +1,101 @@
+
+body {
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1.5;
+    padding-left: 3em;
+    width: 60%;
+}
+
+
+
+/* NAVIGATION BAR */
+
+.navHeader ul {
+    background: #efefef;
+    background: -webkit-linear-gradient(top, rgba(201, 116, 73, 0.84) 0%, #000 90%);
+    background: -moz-linear-gradient(top, #ff7619 0%,#000 90%);
+    background: linear-gradient(top, #ff7619 0%,#000 90%);
+    box-shadow: 0 0 9 rgba(0,0,0,0.15);
+    padding: 0 0;
+    border-radius: 10px;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+}
+.navHeader ul:after {
+    content: "";
+    clear: both;
+    display: block;
+    border-radius: 10px;
+}
+
+.navHeader ul li {
+    float: left;
+    border-radius: 10px;
+}
+.navHeader ul li:hover {
+    background: #4b545f;
+    display: inline-block;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.navHeader ul li:hover:hover, .navHeader ul li:hover:focus, .navHeader ul li:hover:active {
+    box-shadow: 0 0 20px rgba(100, 36, 29, 0.60);
+}
+
+.navHeader ul li a {
+    display: block;
+    padding: 0.05em 0.5em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navHeader ul ul
+{
+    background: #5f6975;
+    border-radius: 10px;
+    padding: 0 0;
+    position: absolute;
+    top: 100%;
+    display: inline-table;
+}
+
+.navHeader ul li:hover ul{
+    color: #fff;
+    display: block;
+    border-radius: 10px;
+    left: auto;
+}
+.navHeader ul ul li {
+    float: none;
+    border-top: 1px solid #6b727c;
+    border-bottom: 1px solid #575f6a;
+    position: relative;
+}
+.navHeader ul ul li a {
+    padding: 5px 20px;
+    color: #fff;
+}
+.navHeader ul ul li a:hover {
+    background: #4b545f;
+    border-radius: 10px;
+}
+
+/* END OF NAVIGATION BAR */
+
+
+
+/* IMAGES */
+
+#logo { max-width: 1000px;
+    min-width: 400px;
+}
+
+
+/* END OF IMAGES*/
