@@ -99,3 +99,18 @@ body {
 
 
 /* END OF IMAGES*/
+
+/*  F O O T E R   */
+
+/* SOCIAL LINKS IN FOOTER  */
+.social-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+}
+/* END OF SOCIAL LINKS IN FOOTER*/
+/*   END OF FOOTER  */
