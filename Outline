@@ -1,0 +1,23 @@
+Stanley Park Bike Rentals – 
+Functional Requirements
+Essentials
+-	Application/ log in form for users (to track information)
+-	Payment 
+o	Liability warning
+-	Bike information database 
+o	photos, specifications, (*status*), price
+-	Contact(s)
+o	 store information, contact information
+-	Map database
+o	Route planning?
+-	Social media
+o	Twitter, Facebook, Tripadvisor
+-	
+Important 
+-	Admin/user purchase history
+Extra
+-	Addition of rollerblades in database
+-	Dining combos
+Non-Functional Requirements
+-	Logos
+-	Colour scheme
