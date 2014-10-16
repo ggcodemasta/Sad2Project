@@ -26,12 +26,175 @@
         <li><a href="login.html">Login</a></li>
     </ul>
 </nav><!--.navHeader-->
-</header>
+
 
 <main id="main" class="main">
     <h1>Rates &amp; Rentals</h1>
 
-    <p>This is the template for the subpages such as rentals and rates, locations, about us, faq, and contact us.</p>
+
+    <table id="rentalRates" class="rentalRates">
+        <caption>Bike Rental Rates</caption>
+        <tr>
+            <th>Bike</th>
+            <th>Half Day Cost</th>
+            <th>Full Day Cost</th>
+        </tr>
+        <tr>
+            <td>Adult</td>
+            <td>&#36; 50</td>
+            <td>&#36; 50</td>
+        </tr>
+        <tr>
+            <td>Kids</td>
+            <td>&#36; 25</td>
+            <td>&#36; 25</td>
+        </tr>
+        <tr>
+            <td>Tandem</td>
+            <td>&#36; 75</td>
+            <td>&#36; 75</td>
+        </tr>
+        <tr>
+            <td>Family Rate</td>
+            <td>&#36; 100</td>
+            <td>&#36; 100</td>
+        </tr>
+    </table>
+
+    <br>
+    <form action="infoForm.html" method="post" enctype="multipart/form-data" class="orderForm">
+        <fieldset id="bikes">
+            <legend>Bikes</legend>
+            <ul>
+                <li>
+                    <img src="images/bike4.png" alt="bike photo" width="373"><br>
+                    <label for="adult1">Adult Bike 1</label>
+                    <input type="checkbox" name="bike" id="adult1"
+                           value="adult1" />
+                    <input type="number" name="qty" id="adult1qty"
+                           placeholder="Quantity"
+                           min="0" max="10"/>
+                    <label for="durationA1">Rental Duration</label>
+                    <select name="durationA1" id="durationA1">
+
+                        <option value="halfDay">Half Day</option>
+                        <option value="fullDay">Full Day</option>
+                    </select>
+                </li>
+                <li><br>
+                    <img src="images/bike5.png" alt="bike photo" width="373"><br>
+                    <label for="adult2">Adult Bike 2</label>
+                    <input type="checkbox" name="bike" id="adult2"
+                           value="adult2" />
+                    <input type="number" name="qty" id="adult2qty"
+                           placeholder="Quantity"
+                           min="0" max="10" />
+                    <label for="durationA2">Rental Duration</label>
+                    <select name="durationA2" id="durationA2">
+
+                        <option value="halfDay">Half Day</option>
+                        <option value="fullDay">Full Day</option>
+                    </select>
+                </li>
+                <li><br>
+                    <img src="images/bike6.png" alt="bike photo" width="373"><br>
+                    <label for="adult3">Adult Bike 3</label>
+                    <input type="checkbox" name="bike" id="adult3"
+                           value="adult3" />
+                    <input type="number" name="qty" id="adult3qty"
+                           placeholder="Quantity"
+                           min="0" max="10" />
+                    <label for="durationA3">Rental Duration</label>
+                    <select name="durationA3" id="durationA3">
+
+                        <option value="halfDay">Half Day</option>
+                        <option value="fullDay">Full Day</option>
+                    </select>
+                </li>
+            </ul>
+            <ul>
+                <li><br>
+                    <img src="images/kid_bike3.png" alt="bike photo" width="373"><br>
+                    <label for="child1">Child Bike 1</label>
+                    <input type="checkbox" name="bike" id="child1"
+                           value="child1" />
+                    <input type="number" name="qty" id="child1qty"
+                           placeholder="Quantity"
+                           min="0" max="10" />
+                    <label for="durationC1">Rental Duration</label>
+                    <select name="durationC1" id="durationC1">
+
+                        <option value="halfDay">Half Day</option>
+                        <option value="fullDay">Full Day</option>
+                    </select>
+                </li>
+                <li><br>
+                    <img src="images/kid_bike4.png" alt="bike photo" width="373"><br>
+                    <label for="child2">Child Bike 2</label>
+                    <input type="checkbox" name="bike" id="child2"
+                           value="child2" />
+                    <input type="number" name="qty" id="child2qty"
+                           placeholder="Quantity"
+                           min="0" max="10" />
+                    <label for="durationC2">Rental Duration</label>
+                    <select name="durationC2" id="durationC2">
+
+                        <option value="halfDay">Half Day</option>
+                        <option value="fullDay">Full Day</option>
+                    </select>
+                </li>
+                <li><br>
+                    <img src="images/kid_bike5.png" alt="bike photo" width="373"><br>
+                    <label for="child3">Child Bike 3</label>
+                    <input type="checkbox" name="bike" id="child3"
+                           value="child3" />
+                    <input type="number" name="qty" id="child3qty"
+                           placeholder="Quantity"
+                           min="0" max="10" />
+                    <label for="durationC3">Rental Duration</label>
+                    <select name="durationC3" id="durationC3">
+
+                        <option value="halfDay">Half Day</option>
+                        <option value="fullDay">Full Day</option>
+                    </select>
+                </li>
+            </ul>
+            <ul>
+                <li><br>
+                    <img src="images/tandem3.png" alt="bike photo" width="373> <br>
+                    <label for="tandem1"><br>Tandem Bike </label>
+                    <input type="checkbox" name="bike" id="tandem1"
+                           value="tandem1" />
+                    <input type="number" name="qty" id="tandem1qty"
+                           placeholder="Quantity"
+                           min="0" max="10" />
+                    <label for="durationT1">Rental Duration</label>
+                    <select name="durationT1" id="durationT1">
+
+                        <option value="halfDay">Half Day</option>
+                        <option value="fullDay">Full Day</option>
+                    </select>
+                </li>
+               <!-- <li><br>
+                    <img src="images/tandem.png" alt="bike photo" width="373><br>
+                    <label for="tandem2">Tandem Bike 2</label>
+                    <input type="checkbox" name="bike" id="tandem2"
+                           value="tandem2" />
+                    <input type="number" name="qty" id="tandem2qty"
+                           placeholder="Quantity"
+                           min="0" max="10" />
+                    <label for="durationT2">Rental Duration</label>
+                    <select name="durationT2" id="durationT2">
+
+                        <option value="halfDay">Half Day</option>
+                        <option value="fullDay">Full Day</option>
+                    </select>
+                </li> -->
+            </ul>
+            <input type="submit" name="submit" value="Create Order"/>
+        </fieldset>
+    </form>
+
 
 </main>
 
@@ -48,7 +211,7 @@
 
 <footer>
     <hr>
-
+    <p><em>Photo credits:</em> All bicycle photos used with permission. Tandem bike by Richard Masoner <a href="https://flic.kr/p/36ZkK2">https://flic.kr/p/36ZkK2</a>. All other bike photos from the <a href="https://www.flickr.com/photos/birminghambikefoundry/"> Birmingham Bike Foundry</a>.</p>
 
     <div id="footer" class="footer">
 
@@ -68,9 +231,11 @@
 
 
     <div id="copyright" class="copyright">
-        <p>
-            &#64; Stanley Park Bike Rentals. All rights reserved.
-        </p>
+
+        <p>  &#64; Stanley Park Bike Rentals. All rights reserved.</p>
+
+
+
     </div><!--.copyright-->
 </footer>
 

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title> FAQ - Stanley Park Bike Rentals</title>
+    <title> Order Confirmation- Stanley Park Bike Rentals</title>
     <link href="style.css" rel="stylesheet" />
     <meta name="author" content=" ">
     <meta name="description" content="Stanley Park Bike Rentals">
@@ -29,23 +29,27 @@
 
 
 <main id="main" class="main">
-    <h1>FAQ</h1>
+    <h1>Order Confirmation</h1>
 
-    <h3>Helmets</h3>
-    <p>Helmets are not included for liability reasons. New helmets can be purchased in store.</p>
-    <p>Clients agree to wear helmets at all times when riding rental bikes.</p>
+    <p>Thank You for reserving with us!</p>
+    <p>Your order number is: <strong>1234</strong></p>
+    <p>You should receive an email with your reservation details soon.</p>
 
-    <h3>Terms and conditions</h3>
-    <p>See our <a href="terms.html">terms and conditions</a> pages.</p>
+    <p>You can now take this time to register for an account. With an account you can update any reservations you've made,
+        review past reservations, or update your contact and billing info. All you need is to create a password and we'll use
+        the information you entered during this reservation</p>
 
-    <!--<h3>What if it rains?</h3> -->
-    <h3>Can I buy a bike?</h3>
-    <p>We have an annual sale of our used bikes.</p>
-    <h3>What if I loose the bike?</h3>
-    <p>See our <a href="terms.html">terms and conditions</a> pages.</p>
+    <p><form action="accountCreation.html" method="post" enctype="multipart/form-data"
+                       class="createPassword">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password"
+               required="required"
+               maxlength="20" size="20" />
+        <input type="submit" name="submit" value="Create Account"/>
+    </form></p>
+    <br>
 
 </main>
-
 
 
 
