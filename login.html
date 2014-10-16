@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title> Login to your account - Stanley Park Bike Rentals</title>
+    <link href="style.css" rel="stylesheet" />
+    <meta name="author" content=" ">
+    <meta name="description" content="Stanley Park Bike Rentals">
+    <meta name="keywords" content="bike rentals, Stanley Park, Vancouver BC, Canada">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="logo" class="logo">
+    <a href="index.html"><img src="images/home_image_75percent.png" height="371" width="1000" alt="Stanley Park Bike Rentals Logo"></a>
+</div><!--.logo-->
+
+
+<nav id="main-nav" class="navHeader">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="rentals.html">Rates &amp; Rentals</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</nav><!--.navHeader-->
+</header>
+
+<main id="main" class="main">
+    <h1>Login or Create an Account</h1>
+
+     <form name="login_form" action="#" method="get">
+         <fieldset id="login">
+             <legend>Login</legend>
+              <ul>
+                  <li>Username: <input type="text" name="user"></li>
+                 <li>Password: <input type="password" name="login_pwd"></li>
+                 <input type="submit" value="Submit">
+                  <input type="submit" name="submit" value="Login"/>
+             </ul>
+         </fieldset>
+     </form>
+
+
+
+
+    <form action="create_account.html" method="post" enctype="multipart/form-data" class="create_account">
+        <fieldset id="create_account">
+            <legend>Create Account</legend>
+            <ul>
+                <li>
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname"
+                           required="required"
+                           placeholder="First Name"
+                           maxlength="20" size="20" />
+                </li>
+                <li>
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname"
+                           required="required"
+                           placeholder="Last Name"
+                           maxlength="20" size="20" />
+                </li>
+                <li>
+                    <label for="address1">Address 1</label>
+                    <input type="text" name="address1" id="address1"
+                           required="required"
+                           placeholder="Address"
+                           maxlength="40" size="40" />
+                </li>
+                <li>
+                    <label for="address2">Address 2</label>
+                    <input type="text" name="address2" id="address2"
+                           placeholder="Address"
+                           maxlength="40" size="40" />
+                </li>
+                <li>
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city"
+                           required="required"
+                           placeholder="City"
+                           maxlength="30" size="30" />
+                </li>
+                <li>
+                    <label for="provinceState">Province/State</label>
+                    <input type="text" name="provinceState" id="provinceState"
+                           placeholder="Province/State"
+                           maxlength="30" size="30" />
+                </li>
+                <li>
+                    <label for="postalZip">Postal/Zip</label>
+                    <input type="text" name="postalZip" id="postalZip"
+                           required="required"
+                           placeholder="Postal/Zip"
+                           maxlength="10" size="10" />
+                </li>
+                <li>
+                    <label for="country">Country</label>
+                    <input type="text" name="country" id="country"
+                           required="required"
+                           placeholder="Country"
+                           maxlength="30" size="30" />
+                </li>
+                <li>
+                    <label for="telephone">Telephone</label>
+                    <input type="tel" name="telephone" id="telephone"
+                           required="required"
+                           placeholder="(604) 123-4567"
+                           maxlength="22" size="22" />
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email"
+                           required="required"
+                           placeholder="example@domain.com"
+                           maxlength="30" size="30"/>
+                    <input type="submit" name="submit" value="Create my account"/>
+                </li>
+            </ul>
+        </fieldset>
+</form>
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <hr>
+
+
+    <div id="footer" class="footer">
+
+        <p><address>Stanley Park Bike Rentals:
+        555 Seymour Street
+        Vancouver, British Columbia
+        V6B 3H6 , Canada
+    </address></p>
+
+        <div id="social-links" class="social-links">
+            <ul>
+                <li><a href="http://twitter.com"><img src="images/Twitter_logo_blue.png" width="32" height="32" alt="Twitter"></a></li>
+                <li><a href="http://facebook.com"><img src="images/FB-ThumbsUp_29.png" width="29" height="26" alt="Facebook"></a></li>
+            </ul>
+        </div><!--.social-links-->
+    </div><!--footer-location-->
+
+
+    <div id="copyright" class="copyright">
+        <p>
+            &#64; Stanley Park Bike Rentals. All rights reserved.
+        </p>
+    </div><!--.copyright-->
+</footer>
+
+</body>
+</html>

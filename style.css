@@ -8,8 +8,39 @@ body {
 
 
 
+
 /* NAVIGATION BAR */
 
+
+
+.navHeader ul {
+    padding: 0;
+    font-weight: 900;
+    text-align: center;
+}
+
+.navHeader ul li {
+    display: inline;
+}
+
+.navHeader ul li a {
+    background-color: #1e5799; /* darkslategray;*/
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 1 1 1 1;
+}
+
+.navHeader ul li a:hover {
+    background-color: white;
+    color: darkslategray;
+}
+
+/* END OF NAVIGATION BAR  */
+
+
+/*  OLD NAVIGATION BAR  */
+/*
 .navHeader ul {
     background: #efefef;
     background: -webkit-linear-gradient(top, rgba(201, 116, 73, 0.84) 0%, #000 90%);
@@ -87,7 +118,7 @@ body {
     border-radius: 10px;
 }
 
-/* END OF NAVIGATION BAR */
+/* END OF NAVIGATION BAR */ */
 
 
 
@@ -99,3 +130,54 @@ body {
 
 
 /* END OF IMAGES*/
+
+
+
+/* F O R M S */
+
+form {
+    width: 60%;
+    min-width: 400px;
+}
+
+form .li {
+    list-style: none;
+}
+
+ul {
+    list-style-type: none;
+}
+/* END OF FORMS
+
+/*  T A B L E S  */
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+
+table, ul {
+    list-style-type: none;
+}
+/* END OF TABLES */
+
+
+
+
+
+/*  F O O T E R   */
+
+/* SOCIAL LINKS IN FOOTER  */
+.social-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+}
+/* END OF SOCIAL LINKS IN FOOTER*/
+/*   END OF FOOTER  */

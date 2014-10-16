@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title> Template - Stanley Park Bike Rentals</title>
+    <title>Order Details - Stanley Park Bike Rentals</title>
     <link href="style.css" rel="stylesheet" />
     <meta name="author" content=" ">
     <meta name="description" content="Stanley Park Bike Rentals">
@@ -31,8 +31,57 @@
 <main id="main" class="main">
     <h1>Order Details</h1>
 
-    <p>This is the template for the subpages such as rentals and rates, locations, about us, faq, and contact us.</p>
-
+    <h1>Order Details</h1>
+    <p><strong>Name</strong>: Sam New</p>
+    <p><strong>Address</strong>: 5888 Olive Ave</p>
+    <p><strong>City</strong>: Burnaby</p>
+    <p><strong>Province</strong>: BC</p>
+    <p><strong>Postal Code</strong>: V5H 2P4</p>
+    <p><strong>Country</strong>: Canada</p>
+    <p><strong>Telephone</strong>: 306-527-7969</p>
+    <p><strong>Email</strong>: sam_new90@yahoo.ca</p>
+    <p><strong>Credit Card</strong>: Visa</p>
+    <p><strong>Card Number</strong>: XXXX-XXXX-XXXX-1234</p>
+    <p><strong>Card Holders Name</strong>: Sam New</p>
+    <p><strong>Booking Date</strong>: 10/7/2014</p>
+    <p><strong>Booking Number</strong>: 1234</p>
+    <p><strong>Reservation Date</strong>: 11/25/2014</p>
+    <table id="bikesOrdered" class="bikesOrdered" border="">
+        <caption>Bikes Ordered</caption>
+        <tr>
+            <th>Bike</th>
+            <th>QTY</th>
+            <th>Duration</th>
+            <th>Cost Per Bike</th>
+        </tr>
+        <tr>
+            <td>Adult</td>
+            <td>1</td>
+            <td>Half Day</td>
+            <td>$X</td>
+        </tr>
+        <tr>
+            <td>Adult</td>
+            <td>2</td>
+            <td>Full Day</td>
+            <td>$X</td>
+        </tr>
+        <tr>
+            <td>Kids</td>
+            <td>3</td>
+            <td>Half Day</td>
+            <td>$X</td>
+        </tr>
+        <tr>
+            <td>Tandem</td>
+            <td>1</td>
+            <td>Full Day</td>
+            <td>$X</td>
+        </tr>
+    </table>
+    <form action="orderConfirmation.html" method="post" enctype="multipart/form-data" class="confirmation">
+        <input type="submit" name="submit" value="Confirm Order"/>
+    </form>
 </main>
 
 
