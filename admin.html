@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> Admin Account Information - Stanley Park Bike Rentals</title>
+    <link href="style.css" rel="stylesheet" />
+    <meta name="author" content=" ">
+    <meta name="description" content="Stanley Park Bike Rentals">
+    <meta name="keywords" content="bike rentals, Stanley Park, Vancouver BC, Canada">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="logo" class="logo">
+    <a href="index.html"><img src="images/home_image_75percent.png" height="371" width="1000" alt="Stanley Park Bike Rentals Logo"></a>
+</div><!--.logo-->
+
+
+<nav id="main-nav" class="navHeader">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="rentals.html">Rates &amp; Rentals</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</nav><!--.navHeader-->
+
+
+<main id="main" class="main">
+    <h1>Order Details</h1>
+
+    <h1>Account Details</h1>
+    <nav>
+        <ul>
+            <li><a href="#contact">Contact Info</a></li>
+            <li><a href="#addBike">Add New Bike</a></li>
+            <li><a href="#viewReservations">View Reservation</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <h2 id="contact">Contact Info</h2>
+        <p><strong>Name</strong>: Sam New</p>
+        <p><strong>Address</strong>: 5888 Olive Ave</p>
+        <p><strong>City</strong>: Burnaby</p>
+        <p><strong>Province</strong>: BC</p>
+        <p><strong>Postal Code</strong>: V5H 2P4</p>
+        <p><strong>Country</strong>: Canada</p>
+        <p><strong>Telephone</strong>: 306-527-7969</p>
+        <p><strong>Email</strong>: sam_new90@yahoo.ca</p>
+        <form action="" method="post" enctype="multipart/form-data" class="update">
+            <input type="submit" name="submit" value="Update Info"/>
+        </form>
+    </div>
+
+    <div>
+        <h2 id="addBike">Add New Bike</h2>
+        <form action="admin.html" method="post" enctype="multipart/form-data" class="addBike">
+            <fieldset>
+                <ul>
+                    <li>
+                        <ul>
+                            <li>
+                                <input type="radio" name="bikeType" id="newAdultBike"
+                                       value="newAdultBike" checked="checked">
+                                <label for="newAdultBike">Adult Bike</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="bikeType" id="newKidBike"
+                                       value="newKidBike">
+                                <label for="newKidBike">Kids Bike</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="bikeType" id="newTandemBike"
+                                       value="newTandemBike">
+                                <label for="newTandemBike">Tandem Bike</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="newSerialNumber">Serial Number</label>
+                        <input type="text" name="serial" id="newSerialNumber"
+                               required="required"
+                               placeholder="1234"
+                               maxlength="10" size="10" />
+                    </li>
+
+
+
+                    <li>
+                        <label for="newBikeImage">Bike Photo</label>
+                        <input type="file" name="newBikeImage" id="newBikeImage">
+                    </li>
+
+                </ul>
+                <input type="submit" name="submit" value="Add Bike"/>
+            </fieldset>
+        </form>
+    </div>
+
+    <div>
+        <h2 id="editBike">Edit Bike</h2>
+        <form action="admin.html" method="post" enctype="multipart/form-data" class="editBike">
+            <fieldset>
+                <ul>
+                    <li>
+                        <label for="serialNumber">Serial Number</label>
+                        <input type="text" name="serial" id="serialNumber"
+                               required="required"
+                               placeholder="1234"
+                               maxlength="10" size="10" />
+                    </li>
+                    <li>
+                        <ul>
+                            <li>
+                                <input type="radio" name="bikeType" id="adultBike"
+                                       value="adultBike" checked="checked">
+                                <label for="adultBike">Adult Bike</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="bikeType" id="kidBike"
+                                       value="kidBike">
+                                <label for="kidBike">Kids Bike</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="bikeType" id="tandemBike"
+                                       value="tandemBike">
+                                <label for="tandemBike">Tandem Bike</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="bikeImage">Bike Photo</label>
+                        <input type="file" name="bikeImage" id="bikeImage">
+                    </li>
+
+                </ul>
+                <input type="submit" name="submit" value="Edit Bike"/>
+                <input type="submit" name="submit" value="Remove Bike"/>
+            </fieldset>
+        </form>
+    </div>
+
+    <div>
+        <h2 id="viewReservations">View A Reservation</h2>
+        <form action="admin.html" method="post" enctype="multipart/form-data" class="viewRes">
+            <fieldset>
+                <ul>
+                    <li>
+                        <label for="resNumber">Reservation Number</label>
+                        <input type="text" name="resNumber" id="resNumber"
+                               placeholder="A0000"
+                               maxlength="10" size="10" />
+                    </li>
+                    <li>
+                        <input type="submit" name="submit" value="View Reservation"/>
+                    </li>
+                </ul>
+
+            </fieldset>
+        </form>
+    </div>
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <hr>
+
+
+    <div id="footer" class="footer">
+
+        <p><address>Stanley Park Bike Rentals:
+        555 Seymour Street
+        Vancouver, British Columbia
+        V6B 3H6 , Canada
+    </address></p>
+
+        <div id="social-links" class="social-links">
+            <ul>
+                <li><a href="http://twitter.com"><img src="images/Twitter_logo_blue.png" width="32" height="32" alt="Twitter"></a></li>
+                <li><a href="http://facebook.com"><img src="images/FB-ThumbsUp_29.png" width="29" height="26" alt="Facebook"></a></li>
+            </ul>
+        </div><!--.social-links-->
+    </div><!--footer-location-->
+
+
+    <div id="copyright" class="copyright">
+        <p>
+            &#64; Stanley Park Bike Rentals. All rights reserved.
+        </p>
+    </div><!--.copyright-->
+</footer>
+
+</body>
+</html>
